@@ -52,3 +52,4 @@
   
     - how to view the project running in the container (open a browser...go to IP and port...)
         - "docker run -d -p 80:5000 mywebsite"
+        -  i checked for the website on the browser using an IP address from my proxy instance and adding 5000, but it didn't work

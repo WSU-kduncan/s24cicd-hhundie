@@ -46,7 +46,10 @@
               1. create a container name "docker build -t mywebsite ."
           ![image](https://github.com/WSU-kduncan/s24cicd-hhundie/assets/118832089/a2010f42-7693-4091-a918-3866764f2ada)
 
-              2. 
+              2. start the image "docker start mywebsite"
+              3. attach the image "docker attach mywebsite"
+              4. run the container " docker run -it the container name"
+          
         - this will take 
     - how to view the project running in the container (open a browser...go to IP and port...)
-        - docker run -d -p 8080:80 mywebsite 
+        - "docker run -d -p 80:5000 mywebsite"

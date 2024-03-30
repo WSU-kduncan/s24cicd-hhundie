@@ -99,4 +99,5 @@ Behavior of GitHub workflow
     - what does it do and when
 what variables in workflow are custom to your project
 think may need to be changed if someone else is going to use it or you reuse it
+        - workflow allows multiple developers to integrate there work in one system. one can see the progress of the other dev.
 

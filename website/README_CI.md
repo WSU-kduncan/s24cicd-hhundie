@@ -37,13 +37,14 @@
     - how to build an image from the Dockerfile
         1. vim Dockerfile
         2. inside the Dockerfile
-        3. configer 'FORM', 'WOORKDIR', 'COPY', 'RUN', 'EXPOSE'(THE PORT), AND 'CMD'
- ![image](https://github.com/WSU-kduncan/s24cicd-hhundie/assets/118832089/3306dd99-26f3-4cda-99b3-26699c15d3a5)
+        3. configer 'FORM', 'WOORKDIR', 'COPY', 'EXPOSE'(THE PORT)
+            - ![image](https://github.com/WSU-kduncan/s24cicd-hhundie/assets/118832089/8f0763e4-61c9-4944-a8c1-5637e9ab5b1d)
+
 
 
     - how to run the container
         - to run a container
-              1. create a container name "docker build -t mywebsite ."
+              1. create a container name "docker build -t hanawebsite ."
           ![image](https://github.com/WSU-kduncan/s24cicd-hhundie/assets/118832089/a2010f42-7693-4091-a918-3866764f2ada)
         2. start the image "docker start mywebsite"
         3. attach the image "docker attach mywebsite"
@@ -51,5 +52,12 @@
           
   
     - how to view the project running in the container (open a browser...go to IP and port...)
-        - "docker run -d -p 80:5000 mywebsite"
-        -  i checked for the website on the browser using an IP address from my proxy instance and adding 5000, but it didn't work
+        - "docker run -it --rm -d -p 8080:80 --name web hanawebsitee"
+        - ![image](https://github.com/WSU-kduncan/s24cicd-hhundie/assets/118832089/10020eee-45c2-456c-9a1e-42236814c517)
+        - to see the running container "docker ps -a"
+        -  ![image](https://github.com/WSU-kduncan/s24cicd-hhundie/assets/118832089/39ab01ef-328c-4a59-9bd5-19e22d1cecc1)
+
+
+        -  i checked for the website on the browser using an IP address from mylocalhost IP and adding 5000,
+        -  ![image](https://github.com/WSU-kduncan/s24cicd-hhundie/assets/118832089/390d0067-5cb7-403d-9079-abe07702b793)
+

@@ -38,7 +38,8 @@
         1. vim Dockerfile
         2. inside the Dockerfile
         3. configer 'FORM', 'WOORKDIR', 'COPY', 'EXPOSE'(THE PORT)
-            - ![image](https://github.com/WSU-kduncan/s24cicd-hhundie/assets/118832089/8f0763e4-61c9-4944-a8c1-5637e9ab5b1d)
+            - ![image](https://github.com/WSU-kduncan/s24cicd-hhundie/assets/118832089/bdf214fd-3b81-4548-b0e2-574ca3b25566)
+
 
 
 

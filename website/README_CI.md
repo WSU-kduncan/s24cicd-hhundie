@@ -59,7 +59,7 @@
         -  ![image](https://github.com/WSU-kduncan/s24cicd-hhundie/assets/118832089/39ab01ef-328c-4a59-9bd5-19e22d1cecc1)
 
 
-        -  i checked for the website on the browser using an IP address from mylocalhost IP and adding 5000,
+        -  i checked for the website on the browser using an IP address from mylocalhost IP and adding 80,
         -  ![image](https://github.com/WSU-kduncan/s24cicd-hhundie/assets/118832089/390d0067-5cb7-403d-9079-abe07702b793)
      
     # Part 2

@@ -104,7 +104,7 @@
         - it will be used/ job  to 'log in'
         - it will be running on 'ubuntu-latest'
         - the steps i need are  'Login to Docker Hub' using 'docker/login-action@v3'
-        - with secret 'username and password'
-  - what does it do and when what variables in the workflow are custom to your project think may need to be changed if someone else is going to use it or you reuse it
+        - with secret 'username and password
+    - what does it do and when what variables in the workflow are custom to your project think may need to be changed if someone else is going to use it or you reuse it
         - workflow allows multiple developers to integrate their work in one system. One can see the progress of the other dev.
 

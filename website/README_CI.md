@@ -33,11 +33,11 @@
     - how to install docker + dependencies (WSL2, for example)
         1. To our PC install "docker Desktop"
         2. In terminal "sudo apt install docker
-        3. to test if our docker is working run "docker run hello-world". If it output what is a hello-world container, then we good to go.
+        3. to test if our docker is working run "docker run hello-world". If it outputs what is a hello-world container, then we are good to go.
     - how to build an image from the Dockerfile
         1. vim Dockerfile
         2. inside the Dockerfile
-        3. configer 'FORM', 'WOORKDIR', 'COPY', 'EXPOSE'(THE PORT)
+        3. configure 'FORM', 'WOORKDIR', 'COPY', 'EXPOSE'(THE PORT; since we are using Nginx, we should have uses port '80')
             - ![image](https://github.com/WSU-kduncan/s24cicd-hhundie/assets/118832089/bdf214fd-3b81-4548-b0e2-574ca3b25566)
 
 

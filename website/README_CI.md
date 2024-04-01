@@ -92,7 +92,7 @@
 
     - How to set a secret
         - in github -> setting-> secrets -> actions -> create new repo secrets
-        - for the secret use username
+        - for the secret use username and password ( should be the same as the credential we use for dockerhub)
         -  go to the terminal folder that is connected to github (eg s24cicd-hhundie) -> ".gitgub/workflows" folder
         - create a yml login action ( vim docker-login.yml -> format the login ( edit the name and make sure the bobs alline with what we are trying to do)
       

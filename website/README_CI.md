@@ -90,6 +90,9 @@
     - Link to your DockerHub repository
         - https://hub.docker.com/repository/docker/htollossa/ceg3120/general
         - ![image](https://github.com/WSU-kduncan/s24cicd-hhundie/assets/118832089/5c4551e7-739f-48c6-8273-70a1212ed28f)
+        -  creating simple workflow
+        -  ![image](https://github.com/WSU-kduncan/s24cicd-hhundie/assets/118832089/0714fc91-fa9e-41ab-94a4-6b4c2bc1a69c)
+
 
       ### Configuring GitHub Secrets
 

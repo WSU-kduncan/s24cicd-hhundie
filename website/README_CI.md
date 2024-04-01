@@ -97,7 +97,7 @@
         - create a yml login action ( vim docker-login.yml -> format the login ( edit the name and make sure the bobs alline with what we are trying to do)
       
     - What secret(s) are set for this projet
-      ![image](https://github.com/WSU-kduncan/s24cicd-hhundie/assets/118832089/9076b25d-6816-4509-8ad9-7a7a34c8e825)
+        - ![image](https://github.com/WSU-kduncan/s24cicd-hhundie/assets/118832089/9076b25d-6816-4509-8ad9-7a7a34c8e825)
 
     -Note: do not copy paste your secrets into your documentation Behavior of GitHub workflow
         - my workflow going to be in my 'main' brunch

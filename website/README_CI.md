@@ -100,14 +100,15 @@
     - What secret(s) are set for this projet
         - ![image](https://github.com/WSU-kduncan/s24cicd-hhundie/assets/118832089/9076b25d-6816-4509-8ad9-7a7a34c8e825)
 
-    - Note: do not copy paste your secrets into your documentation Behavior of GitHub workflow
+    - Note: do not copy-paste your secrets into your documentation Behavior of GitHub workflow
         - my workflow going to be in my 'main' brunch
         - it will be used/ job  to 'log in'
         - it will be running on 'ubuntu-latest'
         - the steps i need are  'Login to Docker Hub' using 'docker/login-action@v3'
-        - with secret 'username and password
+        - with a secret 'username and password
     - what does it do and when what variables in the workflow are custom to your project think may need to be changed if someone else is going to use it or you reuse it
         - workflow allows multiple developers to integrate their work in one system. One can see the progress of the other dev.
-        - Once the workflow is successfull we can check it (github ->actions ->![image](https://github.com/WSU-kduncan/s24cicd-hhundie/assets/118832089/056f8345-391f-4e0e-bbef-d2f52c10a6d0)
+        - It allows for incremental code changes are made frequently and reliably
+        - Once the workflow is successful we can check it (github ->actions ->![image](https://github.com/WSU-kduncan/s24cicd-hhundie/assets/118832089/056f8345-391f-4e0e-bbef-d2f52c10a6d0)
 
 

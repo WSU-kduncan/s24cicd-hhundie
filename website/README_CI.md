@@ -29,6 +29,8 @@
     - This project allows us to create containers.
     - We need a container to help us with resource isolation.
     - To create a container I will be using "Docker".
+    - ![image](https://github.com/WSU-kduncan/s24cicd-hhundie/assets/118832089/832a0f5f-f7af-4d7e-b5cd-d90630e2ad29)
+
 - Run Project Locally
     - how to install docker + dependencies (WSL2, for example)
         1. To our PC install "docker Desktop"

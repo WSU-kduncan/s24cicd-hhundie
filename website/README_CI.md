@@ -91,13 +91,24 @@
       ### Configuring GitHub Secrets
 
     - How to set a secret
-          -
-    - What secret(s) are set for this project
+          - in github -> setting-> secrets -> actions -> create new repo secrets
+          - for the secret use username
+          -  go to the terminal folder that is connected to github (eg s24cicd-hhundie) -> ".gitgub/workflows" folder
+          - create a yml login action ( vim docker-login.yml -> format the login ( edit the name and make sure the bobs alline with what we are trying to do)
+      
+    - What secret(s) are set for this projet
+      ![image](https://github.com/WSU-kduncan/s24cicd-hhundie/assets/118832089/9076b25d-6816-4509-8ad9-7a7a34c8e825)
+
 Note: do not copy paste your secrets into your documentation
 Behavior of GitHub workflow
+        - my workflow going to be in my 'main' brunch
+        - it will be used/ job  to 'log in'
+        - it will be running on 'ubuntu-latest'
+        - the steps i need are  'Login to Docker Hub' using 'docker/login-action@v3'
+        - with secret 'username and password'
 
     - what does it do and when
-what variables in workflow are custom to your project
+what variables in the workflow are custom to your project
 think may need to be changed if someone else is going to use it or you reuse it
-        - workflow allows multiple developers to integrate there work in one system. one can see the progress of the other dev.
+        - workflow allows multiple developers to integrate their work in one system. One can see the progress of the other dev.
 

@@ -12,7 +12,7 @@
 - Create README-CD.md in main folder of your repo that details the following:
 
 - CD Project Overview(what are you doing, why, what tools)
-            - Continuous delivery (CD) is the automated delivery of completed code to environments like testing and development. We use tags to track the version of the code we are trying to deploy.
+  - Continuous delivery (CD) is the automated delivery of completed code to environments like testing and development. We use tags to track the version of the code we are trying to deploy.
 - How to generate a tag in git / GitHub
 - Behavior of GitHub workflow
 - what does it do and when

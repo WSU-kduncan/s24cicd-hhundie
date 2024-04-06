@@ -25,7 +25,7 @@ jobs:
           # list of Docker images to use as base name for tags
           images: |
             name/app
-            /usr/share/nginx/html/index.html
+            index.html/htollossa/nginx
           # generate Docker tags based on the following events/attributes
           tags: |
             type=schedule

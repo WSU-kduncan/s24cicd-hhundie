@@ -29,16 +29,19 @@
     - This project allows us to create containers.
     - We need a container to help us with resource isolation.
     - To create a container I will be using "Docker".
+    - ![image](https://github.com/WSU-kduncan/s24cicd-hhundie/assets/118832089/832a0f5f-f7af-4d7e-b5cd-d90630e2ad29)
+
 - Run Project Locally
     - how to install docker + dependencies (WSL2, for example)
         1. To our PC install "docker Desktop"
         2. In terminal "sudo apt install docker
-        3. to test if our docker is working run "docker run hello-world". If it output what is a hello-world container, then we good to go.
+        3. to test if our docker is working run "docker run hello-world". If it outputs what is a hello-world container, then we are good to go.
     - how to build an image from the Dockerfile
         1. vim Dockerfile
         2. inside the Dockerfile
-        3. configer 'FORM', 'WOORKDIR', 'COPY', 'EXPOSE'(THE PORT)
-            - ![image](https://github.com/WSU-kduncan/s24cicd-hhundie/assets/118832089/8f0763e4-61c9-4944-a8c1-5637e9ab5b1d)
+        3. configure 'FORM', 'WOORKDIR', 'COPY', 'EXPOSE'(THE PORT; since we are using Nginx, we should have uses port '80')
+            - ![image](https://github.com/WSU-kduncan/s24cicd-hhundie/assets/118832089/bdf214fd-3b81-4548-b0e2-574ca3b25566)
+
 
 
 
@@ -58,7 +61,7 @@
         -  ![image](https://github.com/WSU-kduncan/s24cicd-hhundie/assets/118832089/39ab01ef-328c-4a59-9bd5-19e22d1cecc1)
 
 
-        -  i checked for the website on the browser using an IP address from mylocalhost IP and adding 5000,
+        -  i checked for the website on the browser using an IP address from mylocalhost IP and adding 80,
         -  ![image](https://github.com/WSU-kduncan/s24cicd-hhundie/assets/118832089/390d0067-5cb7-403d-9079-abe07702b793)
      
     # Part 2
@@ -87,24 +90,30 @@
     - Link to your DockerHub repository
         - https://hub.docker.com/repository/docker/htollossa/ceg3120/general
         - ![image](https://github.com/WSU-kduncan/s24cicd-hhundie/assets/118832089/5c4551e7-739f-48c6-8273-70a1212ed28f)
+        -  creating simple workflow
+        -  ![image](https://github.com/WSU-kduncan/s24cicd-hhundie/assets/118832089/0714fc91-fa9e-41ab-94a4-6b4c2bc1a69c)
+
 
       ### Configuring GitHub Secrets
 
     - How to set a secret
         - in github -> setting-> secrets -> actions -> create new repo secrets
-        - for the secret use username
+        - for the secret use username and password ( should be the same as the credential we use for dockerhub)
         -  go to the terminal folder that is connected to github (eg s24cicd-hhundie) -> ".gitgub/workflows" folder
         - create a yml login action ( vim docker-login.yml -> format the login ( edit the name and make sure the bobs alline with what we are trying to do)
       
     - What secret(s) are set for this projet
         - ![image](https://github.com/WSU-kduncan/s24cicd-hhundie/assets/118832089/9076b25d-6816-4509-8ad9-7a7a34c8e825)
 
-    - Note: do not copy paste your secrets into your documentation Behavior of GitHub workflow
+    - Note: do not copy-paste your secrets into your documentation Behavior of GitHub workflow
         - my workflow going to be in my 'main' brunch
         - it will be used/ job  to 'log in'
         - it will be running on 'ubuntu-latest'
         - the steps i need are  'Login to Docker Hub' using 'docker/login-action@v3'
-        - with secret 'username and password
+        - with a secret 'username and password
     - what does it do and when what variables in the workflow are custom to your project think may need to be changed if someone else is going to use it or you reuse it
         - workflow allows multiple developers to integrate their work in one system. One can see the progress of the other dev.
+        - It allows for incremental code changes are made frequently and reliably
+        - Once the workflow is successful we can check it (github ->actions ->![image](https://github.com/WSU-kduncan/s24cicd-hhundie/assets/118832089/056f8345-391f-4e0e-bbef-d2f52c10a6d0)
+
 

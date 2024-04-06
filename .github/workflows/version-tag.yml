@@ -25,7 +25,7 @@ jobs:
           # list of Docker images to use as base name for tags
           images: |
             name/app
-            ghcr.io/htollossa/app
+            ./index.html /usr/share/nginx/html/index.html
           # generate Docker tags based on the following events/attributes
           tags: |
             type=schedule

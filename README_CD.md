@@ -23,7 +23,8 @@
 - Behavior of GitHub workflow
   - the workflows should be able to use the yml file to automate our versioning/ tagging system
   - ![image](https://github.com/WSU-kduncan/s24cicd-hhundie/assets/118832089/26e0cbec-23d6-4d77-8d63-0da758dbc12c)
-  - I use my container image in the place of image in yml file, but i keep getting error
+  - I use my container image in the place of image in yml file,
+    - Make sure the "index.html" dire
     - git filenam.yml -> copy/pest the format of GitHub Actions events and Git metadata (change the name of the image,
     - git add filename.yml
     - then push this file

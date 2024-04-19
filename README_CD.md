@@ -99,9 +99,18 @@ Update `README-CD.md` in main folder of your repo to include:
 
 - Setting up a `webhook` listener on the instance
   - How to install [adnanh's `webhook`](https://github.com/adnanh/webhook) to the instance
+      - Installing webhook without go:- "sudo apt install webhook"
+      - 
 - `webhook` task definition file
   - Description of what it does
+      - we want it to be a listener for requests sent from dockerhub or github.
   - Where it should be on the instance (if someone were to use your setup)
+      - create a json file "hooks.json"  with id "mywebhook"
+      - my it is in by home/ubuntu folder
+      - ![image](https://github.com/WSU-kduncan/s24cicd-hhundie/assets/118832089/f24ee6bc-033b-4946-b8df-b1617207229a)
+      - ![image](https://github.com/WSU-kduncan/s24cicd-hhundie/assets/118832089/2b0daf1d-1922-46a8-a099-70be0f02e1e9)
+
+
   - ADD your webhook definition file to your repository
 - How to start the `webhook`
 - How to modify/ create a webhook service file such that your webhook listener is listening as soon as the system is booted

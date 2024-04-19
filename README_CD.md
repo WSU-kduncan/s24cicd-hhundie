@@ -22,7 +22,7 @@
 
 - Behavior of GitHub workflow
   - the workflows should be able to use the yml file to automate our versioning/ tagging system
-  - ![image](https://github.com/WSU-kduncan/s24cicd-hhundie/assets/118832089/3e620164-a282-4c02-8dce-fd0aef8d9ecf)
+  -  ![image](https://github.com/WSU-kduncan/s24cicd-hhundie/assets/118832089/3e620164-a282-4c02-8dce-fd0aef8d9ecf)
 
   - successful workflow notification
   -  ![image](https://github.com/WSU-kduncan/s24cicd-hhundie/assets/118832089/ae9040f5-c1a4-4220-9212-df0eaec1ef8d)
@@ -36,8 +36,6 @@
     - git add filename.yml
     - then push this file
     - if successful we should see a change in our workflow --
-    - ![image](https://github.com/WSU-kduncan/s24cicd-hhundie/assets/118832089/913ed1eb-a2c5-4813-b8a9-ae24a306de83)
-    - ![image](https://github.com/WSU-kduncan/s24cicd-hhundie/assets/118832089/237bca3a-7af2-4f4b-ad1f-253f6883c081)
 
 
 

@@ -86,6 +86,13 @@ Update `README-CD.md` in main folder of your repo to include:
     3. once in proxy instance -> sudo apt install docker
 - Container restart script
   - Justification & description of what it does
+      - my docker should stop a container and restart it
+      - if we manually want to start and stop a container(name "webcont") we have to use the steps i used in my instance are
+          1. sudo docker stop webcot
+          2. sudo docker remove /webcont
+          3. then if we want to test the contained image we can do "sudo docker run -it -p 80:80 --name webcont --restart always htollossa/ceg3120:latest" and test the ip of the instance with the port number in our browser (wehen we do the this command in our instance and test the IP) we can see the activity in the instance terminal 
+          4. or use the following script to automate the above process
+          5. once we done testing it use " ctrl +c" to exit it.
   - Where it should be on the instance (if someone were to use your setup)
   - ADD your script to your repository
   -  ![image](https://github.com/WSU-kduncan/s24cicd-hhundie/assets/118832089/0116435d-6747-404c-857f-71bed3905a9e)

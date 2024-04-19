@@ -51,4 +51,47 @@
   - github.event_name != 'pull_request'
 - Link to Docker Hub repository (as additional proof)
     - https://hub.docker.com/repository/docker/htollossa/ceg3120/general
+## Part 2 - Deployment
+
+### Tasks
+
+For this piece, use an EC2 instance.
+
+- Install docker on the instance
+- `pull` and `run` a container from your DockerHub image
+  - confirm you can access your service running in the container from a browser
+- Create a script to pull a new image from DockerHub and restart the container
+  - put a copy of the script in a folder named `deployment` in your repo
+- Set a listener / hook to receive messages using [adnanh's `webhook`](https://github.com/adnanh/webhook)
+- Create a hook - when a message is received run the container restart script
+  - put a copy of the hook configuration in a folder named `deployment` in your repo
+- Configure either GitHub or DockerHub to send a message to the listener / hook
+
+### Documentation
+
+Update `README-CD.md` in main folder of your repo to include:
+
+- How to install Docker to your instance
+- Container restart script
+  - Justification & description of what it does
+  - Where it should be on the instance (if someone were to use your setup)
+  - ADD your script to your repository
+- Setting up a `webhook` listener on the instance
+  - How to install [adnanh's `webhook`](https://github.com/adnanh/webhook) to the instance
+- `webhook` task definition file
+  - Description of what it does
+  - Where it should be on the instance (if someone were to use your setup)
+  - ADD your webhook definition file to your repository
+- How to start the `webhook`
+- How to modify/ create a webhook service file such that your webhook listener is listening as soon as the system is booted
+    - include commands to reload the service respective to files changed (webhook service file versus hook definition file)
+    - ADD your webhook service file to your repository
+- How to configure GitHub OR DockerHub to message the listener 
+- Provide proof that the CI & CD workflow work.  This means:
+  1. starting with a `commit` that is a change, `tag`ing the `commit`, `push`ing the `tag`
+  2. Showing your GitHub workflow returning a message of success.
+  3. Showing DockerHub has freshly pushed images.
+  4. Showing the instance that you are deploying to has webhook logs indicating the payload was recieved and the container has updated.  
+  
+  Proof can be provided by **either** demonstrating to me in person OR by creating a *video* of the process.  If you go the video route and your file is too large for GitHub, submit it to the "Project 5 - Proof of Flow" Dropbox on Pilot
 

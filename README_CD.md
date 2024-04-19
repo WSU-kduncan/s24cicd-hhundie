@@ -39,9 +39,7 @@
 
     - git add filename.yml
     - then push this file
-    - if successful we should see a change in our workflow --
-
-
+    - if successful we should see a change in our workflow 
 
 - what does it do and when
   - it  uses: docker/metadata-action@v5 
@@ -57,8 +55,18 @@
 
 For this piece, use an EC2 instance.
 
-- Install docker on the instance
 - `pull` and `run` a container from your DockerHub image
+    1. start the docker service "sudo systemctl start docker.service"
+    2. check what the status of docker.service is "sudo systemctl status docker.service"
+    3. to test run "sudo docker run hello-world"
+    4.  to check if we have 'hello-world" container "sudo docker ps -a"
+    5.  to pull the container image i have in my dockerhub(htollossa/ceg3120" -> "sudo docker pull htollossa/ceg3120"
+    6.  massage conferming the pull complition ![image](https://github.com/WSU-kduncan/s24cicd-hhundie/assets/118832089/16346956-8406-479f-b07e-a35ed144d43d)
+    7.  to run the container "sudo docker run htollossa/ceg3120"
+    8.  if we do "sodo docker ps -a" -> we will get
+       - ![image](https://github.com/WSU-kduncan/s24cicd-hhundie/assets/118832089/e561994b-036a-4b08-8dbf-0eeb7fbc3bd7)
+
+
   - confirm you can access your service running in the container from a browser
 - Create a script to pull a new image from DockerHub and restart the container
   - put a copy of the script in a folder named `deployment` in your repo
@@ -72,6 +80,10 @@ For this piece, use an EC2 instance.
 Update `README-CD.md` in main folder of your repo to include:
 
 - How to install Docker to your instance
+    -  Install docker on the instance
+    1. go to home
+    2. ssh to the instance we want to use ( I used my "proxy" instance)
+    3. once in proxy instance -> sudo apt install docker
 - Container restart script
   - Justification & description of what it does
   - Where it should be on the instance (if someone were to use your setup)

@@ -20,11 +20,12 @@
   - to push it to our github repo:- **git push origin v1.2.0 **
   -  ![image](https://github.com/WSU-kduncan/s24cicd-hhundie/assets/118832089/2ba28b81-1f1c-4a7b-9602-6ae3aeb42436)
 
-  - ![image](https://github.com/WSU-kduncan/s24cicd-hhundie/assets/118832089/fcf37dc6-9325-47c7-a3e1-80af142268fc)
+
 
 - Behavior of GitHub workflow
   - the workflows should be able to use the yml file to automate our versioning/ tagging system
   -  ![image](https://github.com/WSU-kduncan/s24cicd-hhundie/assets/118832089/3e620164-a282-4c02-8dce-fd0aef8d9ecf)
+  -  ![image](https://github.com/WSU-kduncan/s24cicd-hhundie/assets/118832089/fcf37dc6-9325-47c7-a3e1-80af142268fc)
 
   - successful workflow notification
   -  ![image](https://github.com/WSU-kduncan/s24cicd-hhundie/assets/118832089/ae9040f5-c1a4-4220-9212-df0eaec1ef8d)

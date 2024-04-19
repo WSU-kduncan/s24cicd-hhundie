@@ -18,7 +18,8 @@
   - tag it with the tag specification v(major.minor.patch) :-**hhundie@LAPTOP-6736F5I5:~/s24cicd-hhundie**$ git tag -a v1.2.0 -m "version 1.1 created"
   - to check for the tag :-** git tag**
   - to push it to our github repo:- **git push origin v1.2.0 **
-  - ![image](https://github.com/WSU-kduncan/s24cicd-hhundie/assets/118832089/f3c8d797-d971-4065-ad4c-90b501f0bba8)
+  -  ![image](https://github.com/WSU-kduncan/s24cicd-hhundie/assets/118832089/2ba28b81-1f1c-4a7b-9602-6ae3aeb42436)
+
   - ![image](https://github.com/WSU-kduncan/s24cicd-hhundie/assets/118832089/fcf37dc6-9325-47c7-a3e1-80af142268fc)
 
 - Behavior of GitHub workflow

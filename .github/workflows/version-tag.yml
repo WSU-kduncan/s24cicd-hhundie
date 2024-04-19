@@ -1,4 +1,4 @@
-name: ci
+name: My_tag_CI
 
 on:
   schedule:
@@ -27,7 +27,7 @@ jobs:
             htollossa/ceg3120
           # generate Docker tags based on the following events/attributes
           tags: |
-            type=schedule
+            
             type=ref,event=branch
             type=ref,event=pr
             type=semver,pattern={{version}}

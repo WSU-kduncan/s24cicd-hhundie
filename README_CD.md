@@ -15,20 +15,27 @@
   - Continuous delivery (CD) is the automated delivery of completed code to environments like testing and development. We use tags to track the version of the code we are trying to deploy.
 - How to generate a tag in git / GitHub
   - first go back to the folder with our code.
-  - tag it with the tag specification v(major.minor.patch) :-**hhundie@LAPTOP-6736F5I5:~/s24cicd-hhundie**$ git tag -a v1.1.0 -m "version 1.1 created"
+  - tag it with the tag specification v(major.minor.patch) :-**hhundie@LAPTOP-6736F5I5:~/s24cicd-hhundie**$ git tag -a v1.2.0 -m "version 1.1 created"
   - to check for the tag :-** git tag**
-  - to push it to our github repo:- **git push origin v1.1.0 **
+  - to push it to our github repo:- **git push origin v1.2.0 **
   - ![image](https://github.com/WSU-kduncan/s24cicd-hhundie/assets/118832089/f3c8d797-d971-4065-ad4c-90b501f0bba8)
 
 - Behavior of GitHub workflow
   - the workflows should be able to use the yml file to automate our versioning/ tagging system
-  - ![image](https://github.com/WSU-kduncan/s24cicd-hhundie/assets/118832089/26e0cbec-23d6-4d77-8d63-0da758dbc12c)
+  - ![image](https://github.com/WSU-kduncan/s24cicd-hhundie/assets/118832089/3e620164-a282-4c02-8dce-fd0aef8d9ecf)
+
+  - successful workflow notification
+  -  ![image](https://github.com/WSU-kduncan/s24cicd-hhundie/assets/118832089/ae9040f5-c1a4-4220-9212-df0eaec1ef8d)
+  -  ![image](https://github.com/WSU-kduncan/s24cicd-hhundie/assets/118832089/fcf37dc6-9325-47c7-a3e1-80af142268fc)
+
+
+
   - I use my container image in the place of image in yml file,
     - Make sure the "index.html" dire
     - git filenam.yml -> copy/pest the format of GitHub Actions events and Git metadata (change the name of the image,
     - git add filename.yml
     - then push this file
-    - if successful we should see a change in our workflow --(it didnt work for me)
+    - if successful we should see a change in our workflow --
     - ![image](https://github.com/WSU-kduncan/s24cicd-hhundie/assets/118832089/913ed1eb-a2c5-4813-b8a9-ae24a306de83)
     - ![image](https://github.com/WSU-kduncan/s24cicd-hhundie/assets/118832089/237bca3a-7af2-4f4b-ad1f-253f6883c081)
 

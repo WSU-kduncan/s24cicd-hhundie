@@ -88,6 +88,8 @@ Update `README-CD.md` in main folder of your repo to include:
   - Justification & description of what it does
   - Where it should be on the instance (if someone were to use your setup)
   - ADD your script to your repository
+  -  ![image](https://github.com/WSU-kduncan/s24cicd-hhundie/assets/118832089/0116435d-6747-404c-857f-71bed3905a9e)
+
 - Setting up a `webhook` listener on the instance
   - How to install [adnanh's `webhook`](https://github.com/adnanh/webhook) to the instance
 - `webhook` task definition file

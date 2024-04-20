@@ -112,16 +112,60 @@ Update `README-CD.md` in main folder of your repo to include:
 
 
   - ADD your webhook definition file to your repository
+      - see the deployment folder
 - How to start the `webhook`
 - How to modify/ create a webhook service file such that your webhook listener is listening as soon as the system is booted
-    - include commands to reload the service respective to files changed (webhook service file versus hook definition file)
-    - ADD your webhook service file to your repository
-- How to configure GitHub OR DockerHub to message the listener 
+  - include commands to reload the service respective to files changed (webhook service file versus hook definition file)
+  - ADD your webhook service file to your repository
+    - while you are in your Ubuntu instance (ssh proxy)
+    - "webhook -hooks hooks.json -verbose"
+    - to exit(ctrl+C)
+    - first, the webhook states are inactive because we didn't do some configuration. Therefore,
+      1. check the webhook status using " sudo systemctl status webhook.service"
+      2. go to the folder webhook.service located "cd /lib/systemd/system/" (root the the one who have permission to edit this folder)
+      3. check if webhook.service is not a symbolic link (so we can make sure we are editing the correct file)
+      4. this show us wher our webhook file is and how it will function
+      5. if we do "sudo vim webhook.service" we will get this
+         - ![image](https://github.com/WSU-kduncan/s24cicd-hhundie/assets/118832089/22fc4cfb-00c5-405b-a05b-cb9e0c8d674e)
+      6. edit the  "ConditionPathExists" and "ExecStart" reflect where and how we set up our hooks
+           - ![image](https://github.com/WSU-kduncan/s24cicd-hhundie/assets/118832089/60b0805a-4813-4cf5-bb65-a907f424f0d2)
+      7. restart the webhook.service
+           - ![image](https://github.com/WSU-kduncan/s24cicd-hhundie/assets/118832089/ef7bb074-1bd7-4456-8d5c-e790a535f3b4)
+      8. to test
+           - in the browser "http://3.213.178.5:9000/hooks/mywebhook" ( at this time it shows a plane screen- wich means it is working)
+          - to prove it is working "sudo docker ps -a" (if the container output is very recent then that means our webhook did something with new container ID)
+              - ![image](https://github.com/WSU-kduncan/s24cicd-hhundie/assets/118832089/b02011bd-e089-497d-98bf-ab728096f262)
+
+    9. to have all of our login display  -> edit the webhook.service " file to include "-verbose
+        - ![image](https://github.com/WSU-kduncan/s24cicd-hhundie/assets/118832089/7cf907ad-558c-4923-b320-a074811c34e8)
+
+
+
+
+- How to configure GitHub OR DockerHub to message the listener
+    - configuring docker hub to message for listening
+        1. go to dockerhub ->webhook (but didn't use this because it is week)
+    - Instead we use Github
+      1. -> webhook service  -> addwebhook
+      2. use the url of the webhook "http://3.213.178.5:9000/hooks/mywebhook"
+      3. secrate webhook
+      4. we want to have dockerhub images sender (webhook)
+           - configure how it got configured workflow with what we want to do
+           -  choose the one we want to do "let me select the events"
+               - such as PUSH
+               - ![image](https://github.com/WSU-kduncan/s24cicd-hhundie/assets/118832089/697bedaf-12c9-4136-be29-40169a24f8e7)
+
+      
 - Provide proof that the CI & CD workflow work.  This means:
   1. starting with a `commit` that is a change, `tag`ing the `commit`, `push`ing the `tag`
   2. Showing your GitHub workflow returning a message of success.
   3. Showing DockerHub has freshly pushed images.
-  4. Showing the instance that you are deploying to has webhook logs indicating the payload was recieved and the container has updated.  
+  4. Showing the instance that you are deploying to has webhook logs indicating the payload was recieved and the container has updated.
+  5.
+  6. 
   
   Proof can be provided by **either** demonstrating to me in person OR by creating a *video* of the process.  If you go the video route and your file is too large for GitHub, submit it to the "Project 5 - Proof of Flow" Dropbox on Pilot
+  ## Diagram
+  -![image](https://github.com/WSU-kduncan/s24cicd-hhundie/assets/118832089/8fbb0928-4b3d-4cf5-bd19-37475f3086a5)
+
 
